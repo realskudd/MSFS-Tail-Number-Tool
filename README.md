@@ -4,11 +4,16 @@ A simple utility to change the tail number on an aircraft after a flight has bee
 I got tired of forgetting to change my tail number after a flight started to match what the economy I was using had. It got really annoying having to do this for every flight,
 especially when I was renting other aircraft.
 
-This tool uses [FSUIPC7](http://www.fsuipc.com/) to set the tail number.
+This tool uses [FSUIPC7][fsuipc] to set the tail number.
 
 ## Requirements
 * FSUIPC7
 * Microsoft Flight Simulator 2020
+
+## How to get this tool
+You can either download the latest release from the "Releases" section on the right side of [this page][github], or you can do a `git clone` of this repo and build the source yourself. 
+
+I have built this tool using [Visual Studio 2019][vs2019]
 
 ## Important Notes
 I have found that this works best if it's used before the "Fly Now" button is clicked after the sim loads. By that, I mean after you load your flight plan or select your departure/arrival/route, when the environment is loaded and you are in your aircraft.
@@ -23,11 +28,17 @@ One final note of caution: Sometimes when I have left the application running an
 ## Credits
 First and foremost I want to thank Pete & John Dowson for making FSUIPC. I have had so much headache trying to get SimConnect SDKs working, but FSUIPC works as expected on the first try.
 
-Also, I want to thank the [FSE](https://www.fseconomy.net/) for expressing interest in a utility like this. Had they not, I would have probably just sat on this in my own messy project files. :)
+Also, I want to thank the [FSE][fse] for expressing interest in a utility like this. Had they not, I would have probably just sat on this in my own messy project files. :)
 
 ## Other things
 I'm not asking you to pay me for this in any fashion, that would go against the whole point of open source software. However, if you would like to donate something to me, you can!
 
-[Buy me a coffee!](https://www.buymeacoffee.com/skudd)
+[Buy me a coffee!][buymecoffee]
 
 If you're on FSE, you can also send some in-game money to me; my username in there is `skudd`
+
+[fsuipc]: http://www.fsuipc.com/
+[github]: https://github.com/realskudd/MSFS-Tail-Number-Tool
+[vs2019]: https://visualstudio.microsoft.com/downloads/
+[fse]: https://www.fseconomy.net/
+[buymecoffee]: https://www.buymeacoffee.com/skudd
