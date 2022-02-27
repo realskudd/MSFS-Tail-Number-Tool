@@ -158,9 +158,13 @@ namespace MSFS_2020_Tail_Number_Fixer___FSUIPC
 
             foreach (ListViewItem i in HistoricList.Items)
             {
-                if (i.Text == t.ToString())
+                if (i.Tag.ToString() == t.Registration)
                 {
                     itemFound = true;
+                    if (i.Text != t.ToString())
+                    {
+                        i.Text = t.ToString();
+                    }
                     break;
                 }
             }
