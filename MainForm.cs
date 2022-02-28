@@ -25,7 +25,15 @@ namespace MSFS_2020_Tail_Number_Fixer___FSUIPC
         {
             get
             {
-                string historyFile = Environment.CurrentDirectory + "\\history.json";
+                string appData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+                string historyFile = $"{appData}\\{Application.CompanyName}\\{Application.ProductName}\\history.json";
+                string directory = Path.GetDirectoryName(historyFile);
+
+                if (!Directory.Exists(directory))
+                {
+                    Directory.CreateDirectory(directory);
+                }
+
                 return historyFile;
             }
         }
